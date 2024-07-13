@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.example.journal.HelloController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
+    </padding>
+    <HBox>
+        <VBox>
+        <Label fx:id="idLabel" text="ID"/>
+        <TextField fx:id="inputId"/>
+        <Label fx:id="nameLabel" text="NAME"/>
+        <TextField fx:id="inputName"/>
+        <Label fx:id="passportLabel" text="PASSPORT"/>
+        <TextField fx:id="inputPassport"/>
+        <Label fx:id="gradesLabel" text="GRADES"/>
+        <TextArea fx:id="inputGrades"/>
+        </VBox>
+        <TextArea fx:id="outputArea"/>
+    </HBox>
+    <HBox>
+    <Label fx:id="CreateTableText"/>
+    <Button text="Create table" onAction="#onCreateTableClick"/>
+
+    <Label fx:id="ConnectionText"/>
+    <Button text="GetConnection to database" onAction="#onGetConnectionButtonClick"/>
+
+    <Label fx:id="CreateStudentText"/>
+    <Button text="Create student" onAction="#onCreateStudentButtonClick"/>
+
+    <Label fx:id="DropTableText"/>
+    <Button text="Drop database" onAction="#onDropTableButtonClick"/>
+
+    <Label fx:id="DeleteStudentText"/>
+    <Button text="Delete student" onAction="#onDeleteStudentButtonClick"/>
+
+    <Label fx:id="UpdateStudentText"/>
+    <Button text="Update student" onAction="#onUpdateStudentButtonClick"/>
+
+    <Button text="Get students" onAction="#onGetStudentsButtonClick"/>
+
+    <Button text="Get student" onAction="#onGetStudentButtonClick"/>
+    </HBox>
+
+</VBox>
